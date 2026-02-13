@@ -44,7 +44,7 @@ from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import (
 
 # 매 env reset 시 IMU의 장착 pose(로컬 좌표계)를 랜덤화함.
 # 위치 오프셋(x,y,z)뿐만 아니라 방향 오프셋(roll/pitch/yaw)도 함께 적용됨.
-# → IMU 좌표축은 링크 좌표축과 항상 평행하지 않을 수 있음.
+# IMU 좌표축은 링크 좌표축과 항상 평행하지 않을 수 있음.
 
 def randomize_imu_mount(
     env: ManagerBasedEnv,
@@ -580,27 +580,6 @@ class adultRoughEnvCfg(LocomotionVelocityRoughEnvCfg):
                         "right_ankle_1",
                         "right_foot_1",
                         "torso_dummy_1",
-                        # "Torso_Side_Right",
-                        # "KC_D_102L_L_Hip_Yoke_Drive",
-                        # "KC_C_104L_PitchHardstopDriven",
-                        # "KC_D_102R_R_Hip_Yoke_Drive",
-                        # "KC_C_104R_PitchHardstopDriven",
-                        # "RS03_5",
-                        # "RS03_6",
-                        # "RS03_4",
-                        # "RS03_3",
-                        # "KC_D_301L_L_Femur_Lower_Drive",
-                        # "KC_C_202L",
-                        # "KC_D_301R_R_Femur_Lower_Drive",
-                        # "KC_C_202R",
-                        # "KC_D_401L_L_Shin_Drive",
-                        # "KC_C_401L_L_UpForearmDrive",
-                        # "KC_D_401R_R_Shin_Drive",
-                        # "KC_C_401R_R_UpForearmDrive",
-                        # "KB_D_501L_L_LEG_FOOT",
-                        # "KB_C_501X_Left_Bayonet_Adapter_Hard_Stop",
-                        # "KB_D_501R_R_LEG_FOOT",
-                        # "KB_C_501X_Right_Bayonet_Adapter_Hard_Stop",
                     ],
                 ),
                 "mass_distribution_params": (0.7, 1.5), # (0.8, 1.2)
